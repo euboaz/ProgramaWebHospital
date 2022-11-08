@@ -7,39 +7,38 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
     <style type="text/css">
-        .auto-style1 {
-            width: 100%;
-            margin-bottom: 12px;
-            background-color: #3399FF;
-        }
+
         .auto-style2 {
             text-align: center;
             font-size: xx-large;
-            background-color: #3399FF;
+            background-color: #FFFFFF;
         }
         .auto-style3 {
             height: 79px;
             text-align: center;
-            background-color: #3399FF;
+            background-color: #FFFFFF;
         }
         .auto-style6 {
             height: 178px;
-            background-color: #3399FF;
+            background-color: #FFFFFF;
         }
         .auto-style8 {
             height: 79px;
             width: 569px;
-            background-color: #3399FF;
+            background-color: #FFFFFF;
         }
         .auto-style9 {
             margin-right: 0px;
-            background-color: #3399FF;
+            background-color: #FFFFFF;
         }
         .auto-style10 {
             height: 178px;
             width: 569px;
             text-align: center;
-            background-color: #3399FF;
+            background-color: #FFFFFF;
+        }
+        .auto-style11 {
+            background-color: #FFFFFF;
         }
     </style>
 </head>
@@ -49,28 +48,31 @@
         </div>
         <table class="auto-style1">
             <tr>
-                <td class="auto-style2" colspan="2"><strong>PACIENTES</strong></td>
+                <td class="auto-style2" colspan="2"><strong><span class="auto-style11">PACIENTES</span></strong></td>
             </tr>
             <tr>
                 <td class="auto-style8">
-                    <br />
-                    Cedula:
+                    <br class="auto-style11" />
+                    <span class="auto-style11">Cedula:
+                    </span>
                     <asp:TextBox ID="TCedula" runat="server"></asp:TextBox>
-                    <br />
-                    <br />
-                    Nombre:<asp:TextBox ID="TNombre" runat="server"></asp:TextBox>
-                    <br />
-                    <br />
-                    Apellidos:<asp:TextBox ID="TApellidos" runat="server"></asp:TextBox>
-                    <br />
-                    <br />
-                    Genero ( M / F ):
+                    <br class="auto-style11" />
+                    <br class="auto-style11" />
+                    <span class="auto-style11">Nombre:</span><asp:TextBox ID="TNombre" runat="server"></asp:TextBox>
+                    <br class="auto-style11" />
+                    <br class="auto-style11" />
+                    <span class="auto-style11">Apellidos:</span><asp:TextBox ID="TApellidos" runat="server"></asp:TextBox>
+                    <br class="auto-style11" />
+                    <br class="auto-style11" />
+                    <span class="auto-style11">Genero ( M / F ):
+                    </span>
                     <asp:TextBox ID="TGenero" runat="server"></asp:TextBox>
-                    <br />
-                    <br />
-                    Seguro (1=SI 2=NO):
+                    <br class="auto-style11" />
+                    <br class="auto-style11" />
+                    <span class="auto-style11">Seguro (1=SI 2=NO):
+                    </span>
                     <asp:TextBox ID="TSeguro" runat="server"></asp:TextBox>
-                    <br />
+                    <br class="auto-style11" />
                 </td>
                 <td class="auto-style3">
                     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="auto-style9" DataKeyNames="cedula" DataSourceID="SqlDataSource2" Height="261px" Width="1003px">
@@ -105,14 +107,16 @@
             </tr>
             <tr>
                 <td class="auto-style10">
-                    <asp:Button ID="BAgregar" runat="server" Text="Agregar" OnClick="BAgregar_Click" />
-&nbsp;
-                    <asp:Button ID="BBorrar" runat="server" Text="Borrar" OnClick="BBorrar_Click" />
-&nbsp;
-                    <asp:Button ID="BModificar" runat="server" Text="Modificar" OnClick="BModificar_Click" />
+                    <asp:Button ID="BAgregar" runat="server" Text="Agregar" OnClick="BAgregar_Click" CssClass="auto-style11" />
+                    <span class="auto-style11">&nbsp;
+                    </span>
+                    <asp:Button ID="BBorrar" runat="server" Text="Borrar" OnClick="BBorrar_Click" CssClass="auto-style11" />
+                    <span class="auto-style11">&nbsp;
+                    </span>
+                    <asp:Button ID="BModificar" runat="server" Text="Modificar" OnClick="BModificar_Click" CssClass="auto-style11" />
                 </td>
                 <td class="auto-style6">
-                    <asp:Image ID="Image1" runat="server" Height="259px" ImageUrl="~/imagenes/hospital-sign-blue-wd.jpg" Width="1003px" />
+                    <asp:Image ID="Image1" runat="server" Height="259px" ImageUrl="~/imagenes/hospital-sign-blue-wd.jpg" Width="1003px" CssClass="auto-style11" />
                 </td>
             </tr>
         </table>
